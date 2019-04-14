@@ -40,6 +40,10 @@ export HBASE_MANAGES_ZK=false       #不使用自带的zk
     <name>hbase.zookeeper.property.dataDir</name>
     <value>/home/twl/zookeeper-3.4.14/datadir</value>
 </property>
-export HBASE_HOME=/usr/local/workstation/hbase
+export HBASE_HOME=/home/twl/hbase-1.4.9
 export PATH=$PATH:$HBASE_HOME/bin
+
+sudo rpm -Uvh http://s3.amazonaws.com/geowave-rpms/release/noarch/geowave-repo-1.0-3.noarch.rpm
+
+yum --enablerepo=geowave search geowave-0.9.8-apache-*
 
