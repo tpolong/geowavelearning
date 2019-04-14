@@ -22,4 +22,24 @@ source /etc/profile	    #修改生效<br/>
 
 # hbase
 wget http://mirror.bit.edu.cn/apache/hbase/1.4.9/hbase-1.4.9-bin.tar.gz<br/>
+sudo tar -zxf hbase-1.4.9-bin.tar.gz -C /home/twl/ 
+sudo chmod -R 777 hbase-1.4.9
+
+export JAVA_HOME=/etc/alternatives/java_sdk_1.8.0_openjdk   #java路径
+export HBASE_MANAGES_ZK=false       #不使用自带的zk
+
+<property>
+    <name>hbase.rootdir</name>
+    <value>hdfs://localhost:9000/hbase/value>
+</property>
+<property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+</property>
+<property>
+    <name>hbase.zookeeper.property.dataDir</name>
+    <value>/home/twl/zookeeper-3.4.14/datadir</value>
+</property>
+export HBASE_HOME=/usr/local/workstation/hbase
+export PATH=$PATH:$HBASE_HOME/bin
 
