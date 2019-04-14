@@ -10,3 +10,4 @@ tar zxvf hadoop-2.9.2.tar.gz<br/>
 wget http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz<br/>
 sudo tar -zxf zookeeper-3.4.14.tar.gz -C /home/twl/  # 解压到/usr/local中<br/>
 cd /home/twl/ <br/>
+sudo chmod -R 777 zookeeper-3.4.14
