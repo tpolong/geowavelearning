@@ -11,3 +11,8 @@ wget http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14
 sudo tar -zxf zookeeper-3.4.14.tar.gz -C /home/twl/  # 解压到/usr/local中<br/>
 cd /home/twl/ <br/>
 sudo chmod -R 777 zookeeper-3.4.14
+vim /etc/profile
+export ZK_HOME=/home/twl/zookeeper-3.4.14
+export PATH=$PATH:$ZK_HOME/bin
+source /etc/profile	    #修改生效
+
